@@ -5,16 +5,26 @@
 char[] letras = new char[10];
 string[] ascii = new string[20];
 
-for (int i = 0; i < 10; i++)
+void CriaVetor()
 {
-    Console.WriteLine($"Digite a {i + 1}ª letra: ");
-    letras[i] = char.Parse(Console.ReadLine());
+    for (int i = 0; i < 10; i++)
+    {
+        Console.WriteLine($"Digite a {i + 1}ª letra: ");
+        letras[i] = char.Parse(Console.ReadLine());
+
+        ascii[2 * i] = letras[i].ToString();
+        ascii[2 * i + 1] = ((int)letras[i]).ToString();
+    }
 }
 
-for (int i = 0; i < 10; i++)
+void ExibirVetor(string[] vetor)
 {
-    ascii[2 * i] = letras[i].ToString();
-    ascii[2 * i + 1] = ((int)letras[i]).ToString();
-
-    Console.WriteLine($"| [{ascii[2 * i]}] [{ascii[2 * i + 1]}] |");
+    for (int i = 0; i < vetor.Length; i++)
+    {
+        Console.Write($"[{vetor[i]}] ");
+    }
+    Console.WriteLine();
 }
+
+CriaVetor();
+ExibirVetor(ascii);
