@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Ascii/Ascii.csproj" Id="c3a9fb22-548c-47b4-a215-bfc4b2c1c0a4" />
+  <Project Path="Fibonacci/Fibonacci.csproj" Id="2f066058-8d7d-4bf6-b001-46d6d39bd625" />
+  <Project Path="ListaExercicio-Vetor/ListaChar.csproj" />
+  <Project Path="ParImpar/ParImpar.csproj" Id="ae8be1e7-e66f-43ec-bc7b-0a621548ba01" />
+</Solution>
